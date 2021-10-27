@@ -22,13 +22,68 @@ struct ContentView: View {
     endPoint: .bottomTrailing)
     
     
-    let white = Color(red: 1, green: 1, blue: 1)
-    let whiteTheSame = Color(red: 1, green: 1, blue: 1)
+    let whiteCustom = Color(red: 1, green: 1, blue: 1)
+    let whiteTheSameCustom = Color(red: 1, green: 1, blue: 1)
     
     
     var body: some View {
         ZStack{
             gradinetBg.ignoresSafeArea()
+            VStack{
+                Text("1/10")
+                    .font(.callout)
+                    .multilineTextAlignment(.leading)
+                    .padding()
+                Text("What was first computer programm?")
+                    .font(.largeTitle)
+                    .bold()
+                    .multilineTextAlignment(.leading)
+                    .padding()
+                Spacer()
+                HStack{
+                    Button(action: {
+                        print("Chhose 1")
+                        }, label: {
+                            Text("Ant")
+                                .font(.body)
+                                .bold()
+                                .multilineTextAlignment(.center)
+                                .padding()
+                                .border(whiteCustom, width: 2)
+                        })
+                    Button(action: {
+                        print("Chhose 2")
+                        }, label: {
+                            Text("Beetle")
+                                .font(.body)
+                                .bold()
+                                .multilineTextAlignment(.center)
+                                .padding()
+                                .border(whiteCustom, width: 2)
+                        })
+                    Button(action: {
+                        print("Chhose 3")
+                        }, label: {
+                            Text("Moth")
+                                .font(.body)
+                                .bold()
+                                .multilineTextAlignment(.center)
+                                .padding()
+                                .border(whiteCustom, width: 2)
+                        })
+                    Button(action: {
+                        print("Chhose 3")
+                        }, label: {
+                            Text("Fly")
+                                .font(.body)
+                                .bold()
+                                .multilineTextAlignment(.center)
+                                .padding()
+                                .border(whiteCustom, width: 2)
+                        })
+                }
+            }
+            .foregroundColor(whiteCustom)
         }
     }
 }
