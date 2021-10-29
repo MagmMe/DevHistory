@@ -10,8 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     let mainColorOne = Color(red: 172/255, green: 39/255, blue: 155/255)
-    let mainColorTwo = Color(red: 58/255, green: 20/255, blue: 144/255)
+   let mainColorTwo = Color(red: 58/255, green: 20/255, blue: 144/255)
     let accentColor = Color(red: 48/255, green: 105/255, blue: 240/255)
+    
     
     // Gradient Color
     let gradinetBg = LinearGradient(gradient: Gradient(colors: [
